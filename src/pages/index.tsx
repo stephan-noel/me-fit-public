@@ -1,6 +1,14 @@
-import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React, { Component } from "react";
+import Head from "next/head";
+import Nav from "../components/nav";
+
+export class MyComponent extends Component {
+  render() {
+    const [state, setState] = React.useState();
+    setState();
+    return <div>{state}</div>;
+  }
+}
 
 const Home = () => (
   <div>
@@ -83,6 +91,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
